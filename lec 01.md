@@ -17,7 +17,7 @@
 
 ## 1. What is ML
 
-ML = Machine Learning  
+_ML = Machine Learning_  
 ML은 `Explicit programming`가 불가능하기 때문에 생겨났다.  
 `Explicit programming`은 명시적 프로그래밍으로 개발자가 명시적으로 설정해둔 부분만 작동하는 프로그램이다.
 
@@ -52,14 +52,17 @@ ML이 학습하는 방법은 아래와 같이 두 가지로 나뉜다.
 레이블이 없는 데이터를 이용하여 `데이터의 숨겨진 구조와 패턴을 학습`하는 방식이다.  
 주로 데이터 클러스터링(Clustering), 차원 축소(Dimensionality Reduction), 이상 탐지(Anomaly Detection) 등에 사용된다.
 
+ㅤ
+ㅤ
+
 ### 장단점
 
-Supervised learning
+_Supervised learning_
 
 - 정답(label)이 있는 데이터를 사용하여 모델을 학습시키기 때문에, `정확도가 높다.`
 - 대규모 데이터셋의 레이블링과 같이 `레이블링의 시간과 비용`이 많이 소요된다.
 
-Unsupervised learning
+_Unsupervised learning_
 
 - 정답(label)이 없는 데이터를 사용하여 학습하기 때문에, 데이터 간의 구조와 `패턴을 자유롭게 파악`할 수 있다. 이를 통해 데이터의 숨겨진 특성을 발견하고 이해할 수 있다.
 - 정답(label)이 없는 데이터를 사용하여 학습하기 때문에, `모델의 정확도가 떨어진다.`
@@ -84,6 +87,14 @@ Unsupervised learning
 |40, 50, 60|1|
 
 Training Dataset은 모델의 성능과 일반화(generalization) 능력을 결정하는 중요한 요소이기 떄문에, 다양하고 대표적인 데이터로 구성하는 것이 좋다.
+
+ㅤ
+
+ㅤ
+
+ㅤ
+
+ㅤ
 
 ## 4. Types of supervised learning
 
