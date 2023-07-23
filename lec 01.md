@@ -6,8 +6,11 @@
 - What is learning?
   - supervised learning
   - unsupervised learning
-- Supervised learning - What is regression? - What is classification? - What is Multi-label Classification?
-  ㅤ
+- Supervised learning
+  - What is regression?
+  - What is classification?
+  - What is Multi-label Classification?
+    ㅤ
 
 ㅤ
 
