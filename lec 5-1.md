@@ -1,0 +1,122 @@
+# lec 05-1
+
+## Contents
+
+- Review
+- Binary Classification (이진 분류)
+- Logistic classification
+  - 0, 1 encoding
+  - Linear regression VS Logistic Hypothesis
+- Logistic Hypothesis
+
+ㅤ
+
+ㅤ
+
+ㅤ
+
+ㅤ
+
+# Reveiw
+
+Linear regression
+
+- Hypothesis  
+  ![Alt text](image.png)
+- cost  
+  ![Alt text](image-1.png)
+- grafient decent  
+  ![Alt text](image-3.png)
+
+ㅤ
+
+ㅤ
+
+ㅤ
+
+ㅤ
+
+# Binary Classification (이진 분류)
+
+Supervised Learning의 한 종류로, 예측된 확률이 0.5보다 크면 1(양성)로, 0.5(음성)보다 작으면 0으로 판단한다.
+
+_`Binary Classification`으로 할 수 있는 것_
+
+- Spam Email Detection : Spam or Ham (스팸 구별 가능)
+- Facebook feed : show or hide (재밌는 피드 찾거나 재미없는 피드 숨기기)
+- Credit Card Fraudulent Transaction detection : legitimate or fraud
+
+ㅤ
+
+ㅤ
+
+ㅤ
+
+ㅤ
+
+# Logistic classification
+
+`Logistic Regression Classification` 알고리즘은 classification algorithm 중에서 가장 정확도가 높은 알고리즘으로 알려져 있으며, 실제 문제에 바로 적용할 수 있을 만큼 정확도가 높다.
+
+아래는 적용 가능한 예시이다.
+
+ㅤ
+
+ㅤ
+
+## 0, 1 encoding
+
+0과 1로 예측하는 코딩을 한다.
+
+- Spam Email Detection : Spam(1) or Ham(0) (스팸 구별 가능)
+- Facebook feed : show(1) or hide(0) (재밌는 피드 찾거나 재미없는 피드 숨기기)
+- Credit Card Fraudulent Transaction detection : legitimate(1) or fraud(0)
+
+ㅤ
+
+ㅤ
+
+## Linear regression VS Logistic Hypothesis
+
+예를 들어,  
+아래에 학생의 공부 시간에 따른 시험 합격 여부 그래프가 있다.
+
+![Alt text](image-4.png)
+
+아래 있는 점은 6시간 이하로 만 공부한 친구들의 합격 여부이고, 위의 점은 7시간 이상 공부한 친구들의 합격 여부이다.
+
+Linear regression을 사용하면 아래와 같이 `0.5 이상은 합격`, `0.5 이하는 불합격`으로 구분된다.  
+![Alt text](image-2.png)
+
+하지만 한 친구가 50시간 이상 공부를 하면 어떨까?  
+![Alt text](image-5.png)
+기존 선이 오른쪽으로 낮아지면서 합격이였던 친구가 불합격으로 예측된다.
+
+따라서 이 문제는 다른 방법을 사용해야하는데, 그 문제를 Logistic Hypothesis를 사용하여 해결할 수 있다.
+
+ㅤ
+
+ㅤ
+
+ㅤ
+
+ㅤ
+
+# Logistic Hypothesis
+
+![Alt text](image.png)
+기존 가설을 Sigmoid function을 사용해 새로 정의해줄 수 있다.
+
+기존 가설에서 H(x)를 Z로 바꿔주어 계살할 수 있다.  
+![Alt text](image-6.png)
+
+![Alt text](image-7.png)
+
+위의 가설과 함수를 사용하면 직선이 아닌 S모양의 더 적합한 그래프가 나오게 된다.  
+![Alt text](image-8.png)
+
+ㅤ
+
+ㅤ
+
+`Sigmoid function`을 사용하면 0.5 이상 혹은 0.5 이하가 무조건 0 또는 1이 되는 것이 아니라, 그 값 그대로 0과 1에 가까워질 뿐이게 된다.
