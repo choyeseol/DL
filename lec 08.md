@@ -11,6 +11,7 @@
   - Convolutional Neural Networks
   - A BIG problem
 - After this
+  - AlexNet
 
 ㅤ
 
